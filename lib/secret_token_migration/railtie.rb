@@ -9,13 +9,11 @@ module SecretTokenMigration
         SecretTokenMigration::Railtie.insert
       end
     end
-  end
 
-  class Railtie
     def self.insert
-      require 'railties/application'
-      require 'action_dispatch/cookies'
-      require 'active_support/message_verifier'
+      require 'secret_token_migration/railties/application'
+      require 'secret_token_migration/action_dispatch/cookies'
+      require 'secret_token_migration/active_support/message_verifier'
     end
   end
 end
