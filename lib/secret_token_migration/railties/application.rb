@@ -1,6 +1,8 @@
 module Rails
   class Application
-    attr_accessor :deprecated_secret_token
+    class Configuration
+      attr_accessor :deprecated_secret_token
+    end
 
     def env_config_with_deprecated_secret_token
       @env_config ||= env_config_without_deprecated_secret_token.merge({
