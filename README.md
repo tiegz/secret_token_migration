@@ -49,7 +49,13 @@ Or install it yourself as:
 
 ## Instrumentation
 
+You can also subscribe to `MessageVerifier` digesting to track when a deprecated secret_token is used (eg, for graphing):
 
+``` ruby
+ActiveSupport::Notifications.subscribe "deprecated_secret.active_support" do
+  Rails.logger.info "deprecated secret_token used"
+end
+```
 
 ## Reminder
 
