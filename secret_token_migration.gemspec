@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = SecretTokenMigration::VERSION
   gem.authors       = ["Tieg Zaharia"]
   gem.email         = ["tieg.zaharia@gmail.com"]
-  gem.description   = %q{A gem for the maintaneance of secret_tokens.}
+  gem.description   = %q{A gem for the maintenance of secret_tokens.}
   gem.summary       = %q{Easy way to switch to a secret_token while not 
                         logging out most of your users.}
   gem.homepage      = "https://github.com/tiegz/secret_token_migration"
