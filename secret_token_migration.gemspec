@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{A gem for the maintaneance of secret_tokens.}
   gem.summary       = %q{Easy way to switch to a secret_token while not 
                         logging out most of your users.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/tiegz/secret_token_migration"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
