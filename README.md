@@ -34,7 +34,7 @@ Regularly, you set a `MyApp::Application.config.secret_token` in your Rails app.
 
 Add this line to your application's Gemfile:
 
-    gem 'secret_token_migration'
+    gem 'secret_token_migration', '~> 0.0.4'
 
 And then execute:
 
